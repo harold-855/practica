@@ -89,24 +89,24 @@ header nav ul li a:after {
   font-size: 1rem;
 }
 
-/* Ajusta la tabla para móviles: ancho completo y scroll horizontal suave */
+/* Ajusta la tabla para móviles: contenedor con scroll horizontal seguro */
+.table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+  margin: 30px 0;
+}
+
 table {
   width: 100%;
   max-width: 100%;
-  margin: 30px auto;
   border-collapse: collapse;
-  overflow: hidden;
-  display: block;
+  border-spacing: 0;
 }
 
 th,
 td {
-  padding: 10px;
+  padding: 12px 10px;
   word-break: break-word;
-}
-
-table {
-  overflow-x: auto;
 }
 
 .zonas-festival {

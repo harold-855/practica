@@ -1,16 +1,42 @@
-table{
-    
-    margin-top: 50px;
-    width: 100px;
-    border:solid black;
+/* Tabla principal del festival: estilo limpio y adaptable */
+table {
+    width: 100%;
+    max-width: 100%;
     border-collapse: collapse;
+    border-spacing: 0;
+    margin: 0;
+    background: #ffffff;
+}
+
+thead {
+    background-color: #0f3d74;
+    color: #ffffff;
+}
+
+th,
+td {
+    padding: 14px 12px;
     text-align: center;
-    margin-left: 35em;
-    
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
 }
 
-th{
-    border:solid;
+th {
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
 }
 
-td{border:solid;}
+tbody tr:nth-child(even) {
+    background-color: #f7f9fc;
+}
+
+tbody tr:last-child td {
+    border-bottom: none;
+}
+
+/* Contenedor que permite scroll horizontal sin romper el diseño */
+.table-wrapper {
+    overflow-x: auto;
+    margin: 30px 16px;
+    padding: 0;
+}
