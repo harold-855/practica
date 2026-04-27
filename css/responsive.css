@@ -1,75 +1,194 @@
-/* 📱 MÓVILES (hasta 600px) */
-@media (max-width: 600px){
-  table{
-    display: block;
-    overflow-x: auto;
+﻿/* =========================
+   AJUSTES GENERALES RESPONSIVE
+========================= */
+/* Asegura que el contenido no se desborde y sea legible en móviles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+}
+
+header {
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  padding: 12px;
+}
+
+header img {
+  max-width: 70px;
+  width: 100%;
+  height: auto;
+}
+
+header h1 {
+  font-size: 1.6rem;
+  margin: 0;
+  text-align: center;
+  width: 100%;
+}
+
+.navegation {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  padding: 0;
+  margin: 0;
+}
+
+header nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  padding: 0;
+  margin: 0;
+}
+
+header nav ul li {
+  margin: 0;
+}
+
+header nav ul li a {
+  padding: 8px 14px;
+  font-size: 0.95rem;
+  display: inline-block;
+  white-space: nowrap;
+}
+
+/* Elimina el separador de barra para no saturar la navegación en móvil */
+header nav ul li a:after {
+  content: none;
+}
+
+.hero {
+  min-height: 260px;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+}
+
+.hero-title {
+  font-size: 2rem;
+  margin: 0;
+}
+
+.hero-paragraph {
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.hero-a {
+  padding: 12px 24px;
+  font-size: 1rem;
+}
+
+/* Ajusta la tabla para móviles: ancho completo y scroll horizontal suave */
+table {
+  width: 100%;
+  max-width: 100%;
+  margin: 30px auto;
+  border-collapse: collapse;
+  overflow: hidden;
+  display: block;
+}
+
+th,
+td {
+  padding: 10px;
+  word-break: break-word;
+}
+
+table {
+  overflow-x: auto;
+}
+
+.zonas-festival {
+  padding: 20px;
+  gap: 20px;
+}
+
+.card img {
+  height: auto;
+  max-height: 250px;
+}
+
+/* =========================
+   MÓVILES (hasta 600px)
+========================= */
+@media (max-width: 600px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  header h1 {
+    font-size: 1.4rem;
+  }
+
+  .hero {
+    padding: 30px 16px;
+  }
+
+  .hero-title {
+    font-size: 1.8rem;
+  }
+
+  .hero-paragraph {
+    font-size: 0.98rem;
+  }
+
+  .hero-a {
+    width: fit-content;
+  }
+
+  table {
+    margin: 20px 0;
+  }
+
+  th,
+  td {
+    padding: 8px;
   }
 }
 
-
-/* 📱➡️📲 TABLETS (desde 600px en adelante) */
-@media (min-width: 600px){
-  header{
-    flex-wrap: nowrap;
+/* =========================
+   TABLETS (601px a 899px)
+========================= */
+@media (min-width: 601px) and (max-width: 899px) {
+  header {
+    justify-content: space-between;
+    padding: 16px 20px;
   }
 
-  nav{
-    width: auto;
+  .hero {
+    padding: 50px 30px;
   }
 
-  .hero-title{
-    font-size: 2.5rem;
+  .hero-title {
+    font-size: 2.4rem;
+  }
+
+  .card img {
+    max-height: 220px;
   }
 }
 
-
-/* 💻 ESCRITORIO (desde 900px en adelante) */
-@media (min-width: 900px){
-  .hero{
-    padding: 100px;
+/* =========================
+   ESCRITORIO (900px en adelante)
+========================= */
+@media (min-width: 900px) {
+  .hero {
+    padding: 80px 60px;
   }
 
-  .hero-title{
+  .hero-title {
     font-size: 3rem;
-  }
-}
-
-
-/* =========================
-   BOTÓN HAMBURGUESA
-========================= */
-.menu-toggle {
-  font-size: 30px;       /* tamaño del icono */
-  cursor: pointer;       /* cambia el cursor al pasar */
-  display: none;         /* oculto por defecto (solo aparece en móvil) */
-}
-
-/* =========================
-   MENÚ NORMAL (ESCRITORIO)
-========================= */
-#nav {
-  display: block;        /* visible normalmente */
-}
-
-/* =========================
-   RESPONSIVE (MÓVILES)
-========================= */
-@media (max-width: 768px) {
-
-  /* mostramos el botón hamburguesa */
-  .menu-toggle {
-    display: block;
-  }
-
-  /* ocultamos el menú por defecto */
-  #nav {
-    display: none;
-    flex-direction: column; /* menú en columna */
-    background: black;      /* fondo opcional */
-  }
-
-  /* cuando el menú está activo */
-  #nav.active {
-    display: flex;          /* lo mostramos */
   }
 }
