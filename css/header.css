@@ -1,0 +1,41 @@
+header{
+    box-sizing: border-box;
+    display:flex;
+    justify-content: center;
+    gap: 40px
+
+}
+
+.navegation{
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+
+}
+
+
+header nav ul {
+    list-style: none;
+}
+
+
+header nav ul li a {
+    text-decoration: none;
+    color:black;
+    background-color: blue;
+    border:solid;
+    border-radius: 30px;
+    
+    
+    
+}
+
+header nav ul li a:hover{
+    color:red
+}
+
+header nav ul li a:after{
+    content:"|";
+   
+    
+}

@@ -1,0 +1,22 @@
+.zonas-festival {
+    display: grid;
+    /* Esto crea columnas que se ajustan automáticamente */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px; /* El espacio entre tus tarjetas */
+    padding: 20px;
+}
+
+.card {
+    border: 1px solid #ddd;
+    border-radius: 12px; /* Esquinas redondeadas */
+    overflow: hidden;    /* Para que la imagen no se salga del borde */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Una sombra suave para dar profundidad */
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.card img {
+    width: 100%;       /* La imagen llena el ancho de la tarjeta */
+    height: 200px;     /* Altura fija para que todas se vean parejas */
+    object-fit: cover; /* Recorta la imagen sin deformarla */
+}

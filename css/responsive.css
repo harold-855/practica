@@ -1,0 +1,75 @@
+/* 📱 MÓVILES (hasta 600px) */
+@media (max-width: 600px){
+  table{
+    display: block;
+    overflow-x: auto;
+  }
+}
+
+
+/* 📱➡️📲 TABLETS (desde 600px en adelante) */
+@media (min-width: 600px){
+  header{
+    flex-wrap: nowrap;
+  }
+
+  nav{
+    width: auto;
+  }
+
+  .hero-title{
+    font-size: 2.5rem;
+  }
+}
+
+
+/* 💻 ESCRITORIO (desde 900px en adelante) */
+@media (min-width: 900px){
+  .hero{
+    padding: 100px;
+  }
+
+  .hero-title{
+    font-size: 3rem;
+  }
+}
+
+
+/* =========================
+   BOTÓN HAMBURGUESA
+========================= */
+.menu-toggle {
+  font-size: 30px;       /* tamaño del icono */
+  cursor: pointer;       /* cambia el cursor al pasar */
+  display: none;         /* oculto por defecto (solo aparece en móvil) */
+}
+
+/* =========================
+   MENÚ NORMAL (ESCRITORIO)
+========================= */
+#nav {
+  display: block;        /* visible normalmente */
+}
+
+/* =========================
+   RESPONSIVE (MÓVILES)
+========================= */
+@media (max-width: 768px) {
+
+  /* mostramos el botón hamburguesa */
+  .menu-toggle {
+    display: block;
+  }
+
+  /* ocultamos el menú por defecto */
+  #nav {
+    display: none;
+    flex-direction: column; /* menú en columna */
+    background: black;      /* fondo opcional */
+  }
+
+  /* cuando el menú está activo */
+  #nav.active {
+    display: flex;          /* lo mostramos */
+  }
+}
