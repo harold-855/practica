@@ -1,37 +1,37 @@
-/* Tabla principal del festival: estilo limpio y adaptable */
+﻿/* table.css: estilos para la tabla de eventos */
 table {
-    width: 100%;
+    width: 100%; /* La tabla ocupa todo el espacio disponible */
     max-width: 100%;
-    border-collapse: collapse;
+    border-collapse: collapse; /* Elimina el espacio entre bordes */
     border-spacing: 0;
     margin: 0;
-    background: #ffffff;
+    background: #ffffff; /* Fondo blanco para que contraste */
 }
 
 thead {
-    background-color: #0f3d74;
-    color: #ffffff;
+    background-color: #0f3d74; /* Cabecera con color azul oscuro */
+    color: #ffffff; /* Texto blanco en la cabecera */
 }
 
 th,
 td {
-    padding: 14px 12px;
-    text-align: center;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+    padding: 14px 12px; /* Espacio interior de celdas */
+    text-align: center; /* Centra el contenido de la tabla */
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12); /* Línea suave entre filas */
 }
 
 th {
-    font-weight: 700;
-    text-transform: uppercase;
+    font-weight: 700; /* Texto más grosor para los encabezados */
+    text-transform: uppercase; /* Mayúsculas en los títulos */
     letter-spacing: 0.03em;
 }
 
 tbody tr:nth-child(even) {
-    background-color: #f7f9fc;
+    background-color: #f7f9fc; /* Fila alternada para claridad */
 }
 
 tbody tr:last-child td {
-    border-bottom: none;
+    border-bottom: none; /* Elimina el último borde innecesario */
 }
 
 /* Contenedor que permite scroll horizontal sin romper el diseño */

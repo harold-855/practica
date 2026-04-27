@@ -1,11 +1,10 @@
-.hero{
-    background-image: url(../assets/images/banquete.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 150px;
-    
+﻿/* hero.css: estilos para la sección principal de bienvenida */
+.hero {
+    background-image: url(../assets/images/banquete.png); /* Imagen de fondo */
+    background-repeat: no-repeat; /* No repite la imagen */
+    background-size: cover; /* La imagen cubre todo el área */
+    height: 150px; /* Altura fija de la sección hero */
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-
-
-
-

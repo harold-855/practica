@@ -1,22 +1,22 @@
+﻿/* card.css: estilos para las tarjetas de zonas del festival */
 .zonas-festival {
-    display: grid;
-    /* Esto crea columnas que se ajustan automáticamente */
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px; /* El espacio entre tus tarjetas */
+    display: grid; /* Usa grid para distribuir tarjetas */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Ajusta columnas según el ancho */
+    gap: 20px; /* Espacio entre tarjetas */
     padding: 20px;
 }
 
 .card {
-    border: 1px solid #ddd;
+    border: 1px solid #ddd; /* Borde ligero alrededor de cada tarjeta */
     border-radius: 12px; /* Esquinas redondeadas */
-    overflow: hidden;    /* Para que la imagen no se salga del borde */
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Una sombra suave para dar profundidad */
+    overflow: hidden; /* Evita que el contenido salga fuera del borde */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Sombra suave para dar profundidad */
     text-align: center;
     padding-bottom: 20px;
 }
 
 .card img {
-    width: 100%;       /* La imagen llena el ancho de la tarjeta */
-    height: 200px;     /* Altura fija para que todas se vean parejas */
-    object-fit: cover; /* Recorta la imagen sin deformarla */
+    width: 100%; /* La imagen ocupa el ancho completo de la tarjeta */
+    height: 200px; /* Altura fija para que las tarjetas sean uniformes */
+    object-fit: cover; /* Recorta la imagen sin deformar */
 }

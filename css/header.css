@@ -1,41 +1,36 @@
-header{
-    box-sizing: border-box;
-    display:flex;
-    justify-content: center;
-    gap: 40px
-
+﻿/* header.css: estilos del encabezado y la navegación */
+header {
+    box-sizing: border-box; /* Incluye el padding en el ancho total */
+    display: flex; /* Usa flexbox para alinear logo y navegación */
+    justify-content: center; /* Centra horizontalmente el contenido */
+    gap: 40px; /* Espacio entre el logo y el menú */
 }
 
-.navegation{
-    display: flex;
-    justify-content: space-around;
-    gap: 30px;
-
+.navegation {
+    display: flex; /* Crea un menú horizontal */
+    justify-content: space-around; /* Distribuye los enlaces con espacio */
+    gap: 30px; /* Separación entre elementos del menú */
 }
-
 
 header nav ul {
-    list-style: none;
+    list-style: none; /* Quita los puntos de la lista */
+    margin: 0;
+    padding: 0;
 }
-
 
 header nav ul li a {
-    text-decoration: none;
-    color:black;
-    background-color: blue;
-    border:solid;
-    border-radius: 30px;
-    
-    
-    
+    text-decoration: none; /* Elimina subrayado de los enlaces */
+    color: black;
+    background-color: blue; /* Fondo azul para los enlaces */
+    border: solid 1px black; /* Borde negro alrededor de cada enlace */
+    border-radius: 30px; /* Bordes redondeados */
+    padding: 8px 12px;
 }
 
-header nav ul li a:hover{
-    color:red
+header nav ul li a:hover {
+    color: red; /* Cambia el color al pasar el ratón */
 }
 
-header nav ul li a:after{
-    content:"|";
-   
-    
+header nav ul li a:after {
+    content: "|"; /* Agrega un separador visual después de cada enlace */
 }

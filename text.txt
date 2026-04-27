@@ -1,3 +1,9 @@
-https://github.com/JavierArizaRiwi/PAGINA-WEB
+﻿https://github.com/JavierArizaRiwi/PAGINA-WEB
 https://validator.w3.org/nu/#textarea
 https://jigsaw.w3.org/css-validator/#validate_by_input
+
+# Anotaciones clave
+- El `meta viewport` es esencial para que el diseño responda en móviles.
+- Usa `overflow-x: auto` en tablas grandes para evitar que se salgan de la pantalla.
+- En CSS responsivo, primero escribe estilos generales y luego las reglas de media queries.
+- Verifica siempre que los IDs usados en JavaScript existan en el HTML.
